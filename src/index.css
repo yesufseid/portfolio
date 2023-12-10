@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.name{
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+font-family: 'Whisper', cursive;
+}
+.title{
+    font-family: 'Russo One', sans-ser
+}
+.button{
+    font-family: 'Whisper', cursive;
+}

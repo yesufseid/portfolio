@@ -37,7 +37,7 @@ export const Example = () => {
       custom={height}
       ref={containerRef}
     >
-      <motion.div className="background" variants={sidebar} />
+      <motion.div className="background  border-r-2 rounded-r-3xl" variants={sidebar} />
       <Navigation />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
