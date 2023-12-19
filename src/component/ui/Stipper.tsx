@@ -18,13 +18,13 @@ export default function DotsMobileStepper() {
   };
 
   return (
-    <div className='rotate-90'>
+    <div className='rotate-90 mx-0 h-10 mr-0 static'>
     <MobileStepper
       variant="dots"
-      steps={6}
+      steps={5}
       position="static"
       activeStep={activeStep}
-      sx={{ maxWidth: 400, flexGrow: 1,color:"success.main",  backgroundColor:'transparent'}}
+      sx={{color:"success.main",  backgroundColor:'transparent'}}
       // nextButton={
       //   <Button size="small" onClick={handleNext} disabled={activeStep === 5}>
       //     Next
