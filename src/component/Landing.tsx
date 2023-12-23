@@ -1,61 +1,25 @@
 import Profile from "../component/ui/Profile"
-import Stipper from "../component/ui/Stipper"
+import Text,{PText} from "./ui/Text"
+import { Icon } from "./ui/logo"
+
 
 export default function Landing() {
   return (
-    <div className="w-screen">
- <svg  className="absolute top-[125px] left-[755px] " width="100px" height="100px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 2.25a1.25 1.25 0
-   11-2.5 0 1.25 1.25 0 012.5 0zm11.5 0a1.25 1.25 0 11-2.5 0 1.25 1.25 0
-    012.5 0zm-1.25 7a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zm1.25 4.5a1.25 
-    1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM2.25 9.25a1.25 1.25 0 100-2.5 1.25 1.25 
-    0 000 2.5zm7-1.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM8 15a1.25 1.25 0 
-    100-2.5A1.25 1.25 0 008 15zM9.25 2.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5
-     0zM2.25 15a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" fill="#efe6e6"/>
-</svg>
-    <div className="grid md:grid-cols-2 grid-cols-1 py-10 my-10 mx-10 title">
-        <div className="flex justify-center">
-            <div>
-           <h1 className=" font-semibold text-yellow-200 text-5xl block mb-3">MRNE Stack</h1>
+    <div>
+    <div className="flex py-10 my-10 mx-10 title">
+        <div className="w-fit   mx-20">
+           <h1 className=" font-semibold text-yellow-200 text-5xl mb-3">MRNE Stack</h1>
            <h1 className=" font-semibold text-yellow-200 text-5xl">Developer .</h1>
-           <p className="font-sans mt-5 text-white text-lg">
-            I like to craft solid and scalable full stack products <br />
-            with great user experiences
-           </p>
-           <div className= "font-sans grid grid-cols-2 mt-20">
-               <div className=" mt-3 text-white ">
-                   <p>
-                    Highly Skilled at progressive <br />
-                    enhancement,design system & <br />
-                    UI Engineering
-                   </p>
-               </div>
-               <div  className=" mt-3 text-white text-left ml-5 ">
-                <p>
-                    Over adecade of experiences <br />
-                    building products for clients <br />
-                    across several Counteries
-                </p>
-
-               </div>
-           </div>
-           </div>
-         
+            <PText />
+            <Text/>
         </div>
-        <div className="flex justify-center items-center z-10">
-           <Profile />
-           {/* <Stipper />  */}
+        <div className="flex justify-center items-center z-10 ml-20">
+          <span  className="relative bottom-[170px] left-12 "><Icon/></span>
+           <Profile />   
+           <span  className="relative top-[110px]  right-[85px]"><Icon/></span> 
         </div>
     </div>
-    <svg  className="absolute bottom-[90px]  left-[1022px] -z-0 " width="100px" height="100px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 2.25a1.25 1.25 0
-   11-2.5 0 1.25 1.25 0 012.5 0zm11.5 0a1.25 1.25 0 11-2.5 0 1.25 1.25 0
-    012.5 0zm-1.25 7a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zm1.25 4.5a1.25 
-    1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM2.25 9.25a1.25 1.25 0 100-2.5 1.25 1.25 
-    0 000 2.5zm7-1.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM8 15a1.25 1.25 0 
-    100-2.5A1.25 1.25 0 008 15zM9.25 2.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5
-     0zM2.25 15a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" fill="#1d01ef"/>
-</svg>
+  
     </div>
   )
 }
