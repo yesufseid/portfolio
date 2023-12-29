@@ -3,6 +3,7 @@ import Landing from "../component/Landing"
 import Landingsmall from "../component/LandingSmall"
 import AboutMe from "./AboutMe"
 import Education from "./Education"
+import Skills from "./Skills"
 
 export default function Home() {
   return ( 
@@ -17,6 +18,7 @@ export default function Home() {
        
       <AboutMe /> 
       <Education />
+      <Skills />
       </div>
   )
 }
