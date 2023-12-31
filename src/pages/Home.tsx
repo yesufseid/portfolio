@@ -4,6 +4,8 @@ import Landingsmall from "../component/LandingSmall"
 import AboutMe from "./AboutMe"
 import Education from "./Education"
 import Skills from "./Skills"
+import Expriance from "./Expriance"
+import Project from "./Project"
 
 export default function Home() {
   return ( 
@@ -19,6 +21,9 @@ export default function Home() {
       <AboutMe /> 
       <Education />
       <Skills />
+      <Expriance />
+      <Project />
+      <Expriance />
       </div>
   )
 }

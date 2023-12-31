@@ -1,6 +1,7 @@
 import Card from "../component/ui/Card"
 import Css from "../component/ui/Svg"
-import {motion,useCycle} from 'framer-motion'
+import {motion,useAnimation} from 'framer-motion'
+import { useEffect } from "react"
 
 const loaderVariant={
     animationOne:{
@@ -11,13 +12,13 @@ const loaderVariant={
                 // yoyo:Infinity,
                 repeat: Infinity,
                 duration:0.5,
-                delay:1
+               
             },
             y:{
                 // yoyo:Infinity,
                 repeat: Infinity,
                 duration:0.25,
-                delay:1
+               
 
             },
             ease:"easeInOut"
@@ -25,39 +26,35 @@ const loaderVariant={
 
     },
     animationTow:{
-      y:[0,-40],
-      x:0,
+      x:[0,-2000],
+      y:0,
       transition:{
           x:{
             repeat: Infinity,
-              duration:0.5
+              duration:20,
+              
           },
           y:{
             repeat: Infinity,
-              duration:0.25
+              duration:20
 
           },
-          ease:"easeInOut"
-      }
+
+          ease:"easeOut"
+      },
+     
 
   },
 
 }
 
 
-
-
-
-
-
-
-
-
 export default function Skills() {
-  
-  const [animation,cycleAnimation]=useCycle("animationOne","animationTow")
-
-
+  const Controls = useAnimation()
+  const data=[Css,Css,Css,Css,Css,Css,Css,Css,Css,Css]
+  useEffect(() => {
+    Controls.start(loaderVariant.animationTow)
+  }, [])
   return (
     <div className="w-full h-screen bg-white mb-20">
           <h1 className="text-myblue font-bold title text-5xl text-center mb-20">Skills</h1>
@@ -67,17 +64,24 @@ export default function Skills() {
         // animate={animation}
         >
         </motion.div>
-          <div className="mb-20 flex gap-5 py-10  overflow-hidden ">
+          <div className="mb-20 flex gap-2 py-10 mt-20  overflow-hidden mx-10 ">
+
+          {
+            data?.map((d)=>(
+              <motion.div
+              animate={Controls}
+              whileHover={{scale:1.2}}
+              onHoverStart={() => {
+                Controls.stop()
+              }}
+              onHoverEnd={()=>{
+                Controls.start(loaderVariant.animationTow)
+              }}
+          >
           <Card  svg={<Css />}  name="Css" />
-          {/* <Card  svg={<Css />}  name="Css" />
-          <Card  svg={<Css />}  name="Css" />
-          <Card  svg={<Css />}  name="Css" />
-          <Card  svg={<Css />}  name="Css" />
-          <Card  svg={<Css />}  name="Css" />
-          <Card  svg={<Css />}  name="Css" />
-          <Card  svg={<Css />}  name="Css" />
-          <Card  svg={<Css />}  name="Css" />
-          <Card  svg={<Css />}  name="Css" /> */}
+          </motion.div>
+            ))
+          }
           </div>
          
     </div>

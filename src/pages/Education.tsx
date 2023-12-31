@@ -1,6 +1,7 @@
 import Box from "../component/ui/Box"
 import Study from "../../public/study-student-svgrepo-com.svg"
 
+
 export default function Education() {
   return (
     <div className="pb-40">
