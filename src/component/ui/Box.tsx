@@ -154,3 +154,75 @@ export function EBox() {
     </div>
   )
 }
+
+
+
+export function ABox() {
+  return (
+    <div>
+         <motion.div
+             variants={cardVariants}
+             whileHover={{ scale: 1.1 }}
+             whileTap={{ scale: 0.95 }}
+             initial="offscreen"
+             whileInView="onscreen"
+             viewport={{ once:true, amount: 0.8 }}
+        >
+        <div className="grid  grid-cols-3 rounded-lg bg-slate-300 m-5 py-2 my-5 hover:bg-slate-400 ">
+       <div className="ml-3  col-span-2">
+          <p  className="text-myblue font-bold">Introduction to Social Media Marketing</p>
+          <p className="font-serif"  >This course lays the foundation of social media marketing. 
+          You’ll learn what social media marketing entails, 
+          including the history and the different social media channels that exist.</p>
+          <div className="flex gap-10 mt-5"> <p className="font-semibold">February 3, 2021</p>
+          <p>Marketing</p></div>
+       </div>
+           
+        </div>
+    </motion.div>
+
+
+
+        <motion.div
+             variants={cardVariants}
+             whileHover={{ scale: 1.1 }}
+             whileTap={{ scale: 0.95 }}
+             initial="offscreen"
+             whileInView="onscreen"
+             viewport={{ once:true, amount: 0.8 }}
+        >
+        <div className="grid  grid-cols-3 rounded-lg bg-slate-300 m-5 py-2 my-5 hover:bg-slate-400 ">
+       <div className="ml-3  col-span-2">
+          <p  className="text-myblue font-bold">Introduction to Social Media Marketing</p>
+          <p className="font-serif"  >This course lays the foundation of social media marketing. 
+          You’ll learn what social media marketing entails, 
+          including the history and the different social media channels that exist.</p>
+          <div className="flex gap-10 mt-5"> <p className="font-semibold">February 3, 2021</p>
+          <p>Marketing</p></div>
+       </div>
+           
+        </div>
+    </motion.div>
+    <motion.div
+             variants={cardVariants}
+             whileHover={{ scale: 1.1 }}
+             whileTap={{ scale: 0.95 }}
+             initial="offscreen"
+             whileInView="onscreen"
+             viewport={{ once:true, amount: 0.8 }}
+        >
+        <div className="grid  grid-cols-3 rounded-lg bg-slate-300 m-5 py-2 my-5 hover:bg-slate-400 ">
+       <div className="ml-3  col-span-2">
+          <p  className="text-myblue font-bold">Introduction to Social Media Marketing</p>
+          <p className="font-serif"  >This course lays the foundation of social media marketing. 
+          You’ll learn what social media marketing entails, 
+          including the history and the different social media channels that exist.</p>
+          <div className="flex gap-10 mt-5"> <p className="font-semibold">February 3, 2021</p>
+          <p>Marketing</p></div>
+       </div>
+           
+        </div>
+    </motion.div>
+    </div>
+  )
+}

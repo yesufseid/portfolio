@@ -6,6 +6,9 @@ import Education from "./Education"
 import Skills from "./Skills"
 import Expriance from "./Expriance"
 import Project from "./Project"
+import Achivement from "./Achivement"
+import Testimonial from "./Testimonial"
+
 
 export default function Home() {
   return ( 
@@ -23,7 +26,8 @@ export default function Home() {
       <Skills />
       <Expriance />
       <Project />
-      <Expriance />
+      <Achivement />
+      <Testimonial />
       </div>
   )
 }
