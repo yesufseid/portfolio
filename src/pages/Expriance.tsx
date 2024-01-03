@@ -1,5 +1,5 @@
 import {EBox} from "../component/ui/Box"
-import Study from "../../public/laptop-computer-coding-code-script-svgrepo-com.svg"
+import Study from "../assets/laptop-computer-coding-code-script-svgrepo-com.svg"
 
 export default function Expriance() {
   return (

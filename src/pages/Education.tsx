@@ -1,5 +1,5 @@
 import Box from "../component/ui/Box"
-import Study from "../../public/study-student-svgrepo-com.svg"
+import Study from "../assets/study-student-svgrepo-com.svg"
 
 
 export default function Education() {

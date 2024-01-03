@@ -1,6 +1,6 @@
-import img from "../../../public/weapon-fantasy-spell-book-magig-svgrepo-com.svg"
-import play from "../../../public/play-circle-svgrepo-com.svg"
-import code from "../../../public/code-circle-svgrepo-com.svg"
+import img from "../../assets/weapon-fantasy-spell-book-magig-svgrepo-com.svg"
+import play from "../../assets/play-circle-svgrepo-com.svg"
+import code from "../../assets/code-circle-svgrepo-com.svg"
 import { useState } from "react"
 import { motion, Variants} from "framer-motion";
 

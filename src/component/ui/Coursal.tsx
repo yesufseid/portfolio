@@ -2,15 +2,13 @@ import * as React from 'react';
 import { useTheme ,createTheme} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import Slide from './Slide';
-import makeStyles from '@mui/material/styles/makeStyles';
+import {makeStyles} from '@material-ui/core';
 
 
  
@@ -18,14 +16,15 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 const images=[1,2,3,4,5]
-// const useStyles = makeStyles(() => ({
-//   root: {
-//     backgroundColor:"black"
-//   },
-// }));
+const useStyles = makeStyles({
+  root: {
+    backgroundColor:"violet"
+  },
+});
 
-// const classes =useStyles()
+
 function SwipeableTextMobileStepper() {
+  const classes =useStyles()
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = 5;
@@ -44,6 +43,10 @@ function SwipeableTextMobileStepper() {
   return (
     <div className='flex gap-10 justify-center items-center' >
         <Button className='border-2 border-pink-600'
+        sx={{
+          border:2,
+          paddingInline:4,
+        }}
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
@@ -56,19 +59,6 @@ function SwipeableTextMobileStepper() {
             )}
           </Button>
     <Box>
-      {/* <Paper
-        square
-        elevation={0}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          height: 50,
-          pl: 2,
-          bgcolor: 'background.default',
-        }}
-      > */}
-        {/* <Typography>{images[activeStep].label}</Typography> */}
-      {/* </Paper> */}
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -84,15 +74,32 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-        <div className='w-30 bg-myblue'>
-      {/* <MobileStepper 
+        <div className='w-30 bg-myblue flex justify-center py-2 '>
+      <MobileStepper 
+        sx={{
+          backgroundColor:'transparent',
+          color: 'success.main',
+          width: 30,
+        }}
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
-      /> */}
+        backButton={
+          <p></p>
+        }
+        nextButton={
+          <p></p>
+        }
+      />
       </div>
     </Box>
-    <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+    <Button
+        sx={{
+          border:2,
+          paddingInline:4,
+        }}
+    
+    size="small" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? (
               <KeyboardArrowRight />
             ) : (

@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "Card.tsx"],
+  "include": ["src", "src/component/ui/Card.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
