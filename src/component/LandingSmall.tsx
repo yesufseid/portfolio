@@ -1,33 +1,32 @@
 import Profile from "../component/ui/Profile"
-import Stipper from "../component/ui/Stipper"
+
 
 export default function Landing() {
   return (
-    <div>
-    <div className="grid grid-cols-1 py-5 my-10  title ">
-    <div className="flex justify-center ml-5 items-center -z-0 ">
+    <div className="grid grid-cols-1 md:py-5 my-10  title ">
+    <div className="flex flex-col justify-center ml-5 items-center -z-0 ">
            <Profile />
-           {/* <Stipper />  */}
      </div>
-        <div className="justify-center mt-10">
-           <h1 className=" font-semibold text-yellow-200 text-5xl block mb-3 text-center ">MRNE Stack</h1>
-           <h1 className=" font-semibold text-yellow-200 text-5xl text-center">Developer .</h1>
-           <p className="font-sans mt-5 text-white text-lg text-center">
-            I like to craft solid and scalable full stack products <br />
+        <div className="justify-center md:mt-10">
+           <h1 className=" font-semibold text-green-600 text-3xl md:text-5xl block mb-3 text-center ">MRNE Stack Developer</h1>
+           <h1 className=" font-semibold text-green-600 md:text-yellow-200 text-3xl md:text-5xl text-center"></h1>
+           <p className="font-sans mt-5 text-black md:text-white text-lg text-center">
+            I like to craft solid and scalable full stack products 
             with great user experiences
            </p>
-           <div className= "font-sans grid grid-cols-2 mt-10 mx-5">
-               <div className=" mt-3 text-white ">
+           <div className= "font-sans grid grid-cols-2 mt-3 mx-4">
+               <div className=" mt-3 text-black md:text-white  flex ">
                    <p>
-                    Highly Skilled at progressive <br />
-                    enhancement,design system & <br />
+                    Highly Skilled at progressive 
+                    enhancement,design system & 
                     UI Engineering
                    </p>
+                   <hr className="w-1 h-24 bg-green-600" />
                </div>
-               <div  className=" mt-3 text-white text-left ml-5 ">
+               <div  className=" mt-3 text-black md:text-white  ">
                 <p>
-                    Over adecade of experiences <br />
-                    building products for clients <br />
+                    Over adecade of experiences 
+                    building products for clients 
                     across several Counteries
                 </p>
                </div>
@@ -35,6 +34,5 @@ export default function Landing() {
            </div>
          
         </div>
-    </div>
   )
 }

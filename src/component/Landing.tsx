@@ -1,18 +1,9 @@
 import Profile from "../component/ui/Profile"
-import Stipper from "../component/ui/Stipper"
+
 
 export default function Landing() {
   return (
     <div className="w-screen">
- <svg  className="absolute top-[125px] left-[755px] " width="100px" height="100px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 2.25a1.25 1.25 0
-   11-2.5 0 1.25 1.25 0 012.5 0zm11.5 0a1.25 1.25 0 11-2.5 0 1.25 1.25 0
-    012.5 0zm-1.25 7a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zm1.25 4.5a1.25 
-    1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM2.25 9.25a1.25 1.25 0 100-2.5 1.25 1.25 
-    0 000 2.5zm7-1.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM8 15a1.25 1.25 0 
-    100-2.5A1.25 1.25 0 008 15zM9.25 2.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5
-     0zM2.25 15a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" fill="#efe6e6"/>
-</svg>
     <div className="grid md:grid-cols-2 grid-cols-1 py-10 my-10 mx-10 title">
         <div className="flex justify-center">
             <div>
@@ -44,18 +35,8 @@ export default function Landing() {
         </div>
         <div className="flex justify-center items-center z-10">
            <Profile />
-           {/* <Stipper />  */}
         </div>
     </div>
-    <svg  className="absolute bottom-[90px]  left-[1022px] -z-0 " width="100px" height="100px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 2.25a1.25 1.25 0
-   11-2.5 0 1.25 1.25 0 012.5 0zm11.5 0a1.25 1.25 0 11-2.5 0 1.25 1.25 0
-    012.5 0zm-1.25 7a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zm1.25 4.5a1.25 
-    1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM2.25 9.25a1.25 1.25 0 100-2.5 1.25 1.25 
-    0 000 2.5zm7-1.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM8 15a1.25 1.25 0 
-    100-2.5A1.25 1.25 0 008 15zM9.25 2.25a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5
-     0zM2.25 15a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" fill="#1d01ef"/>
-</svg>
     </div>
   )
 }

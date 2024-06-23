@@ -12,7 +12,7 @@ const variants = {
 };
 
 export const Navigation = () => (
-  <motion.ul variants={variants} className="z-10">
+  <motion.ul variants={variants} className="z-10"  id="list" >
        <MenuItem />
   </motion.ul>
 );

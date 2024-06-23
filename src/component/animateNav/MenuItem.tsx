@@ -36,7 +36,8 @@ export const MenuItem = () => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-    >
+       id="lists"
+      >
       <div className="icon-placeholder flex justify-center items-center  hover:bg-pink-600 " style={style}>
        <RoofingIcon className="text-sky-700" />
       </div>
@@ -48,6 +49,7 @@ export const MenuItem = () => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
+id="lists"
     >
       <div className="icon-placeholder flex justify-center items-center  hover:bg-pink-600  " style={style}>
        <PersonIcon   className="text-sky-700"/>
@@ -60,6 +62,7 @@ export const MenuItem = () => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
+      id="lists"
     >
       <div className="icon-placeholder flex justify-center items-center  hover:bg-pink-600  z-20" style={style}>
        <TextSnippetIcon className="text-sky-700" />
@@ -72,6 +75,7 @@ export const MenuItem = () => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
+      id="lists"
     >
       <div className="icon-placeholder  flex justify-center items-center  hover:bg-pink-600  z-20" style={style}>
        <SettingsIcon className="text-sky-700" />
@@ -84,6 +88,7 @@ export const MenuItem = () => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
+      id="lists"
     >
       <div className="icon-placeholder  flex justify-center items-center  hover:bg-pink-600  z-20" style={style}>
        <LocalPhoneIcon className="text-sky-700"  />
