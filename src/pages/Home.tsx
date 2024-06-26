@@ -1,6 +1,7 @@
 
 import Contact from "../component/Contact"
 import Homes from "../component/Home"
+import AboutMe from "./AboutMe"
 
 import styled from 'styled-components'
 
@@ -20,6 +21,7 @@ export default function Home() {
   return ( 
   <Container>
     <Homes />
+    <AboutMe />
     <Contact />
   </Container> 
   )

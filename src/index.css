@@ -13,3 +13,7 @@ font-family: 'Whisper', cursive;
 .button{
     font-family: 'Whisper', cursive;
 }
+
+.bgbox{
+    background-image: url("./assets/bg.jpg");
+}
