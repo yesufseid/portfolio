@@ -2,6 +2,7 @@
 import Contact from "../component/Contact"
 import Homes from "../component/Home"
 import AboutMe from "./AboutMe"
+import Skill from "./Skill.tsx"
 
 import styled from 'styled-components'
 
@@ -22,6 +23,7 @@ export default function Home() {
   <Container>
     <Homes />
     <AboutMe />
+    <Skill />
     <Contact />
   </Container> 
   )
