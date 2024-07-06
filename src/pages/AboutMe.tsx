@@ -10,13 +10,15 @@ const Section=styled.div`
  scroll-snap-align:center;
  
 }
-background-image:url("/bg4.jpg")
+background-image:url("/bg4v.jpg")
 `
 const code=["<p>","</p>"]
 export default function AboutMe() {
   return (
     <Section>
+    <div className='flex justify-center'>
       <Arrow />
+      </div>
          <div className=' md:flex gap-10 justify-center py-2'>
           <div className='flex flex-col gap-3 justify-start px-5'>
               <h1 className='text-3xl font-serif font-semibold bg-bg1 border-2 border-Brand1 p-2 

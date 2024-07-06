@@ -15,7 +15,10 @@ export default {
         "bggray":"#43454D",
         "bg1":"#292F36",
         "CSS":"#0C73B8",
-        "React":"#28A9E0"
+        "React":"#28A9E0",
+        "Html":"#E54F26",
+        "js":"#E7A020",
+        "Gray":"#43454D"
 
         
       }

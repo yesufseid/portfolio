@@ -2,7 +2,7 @@ import { GiDividedSquare } from "react-icons/gi";
 
 export default function Arrow() {
   return (
-    <div className='hidden md:flex flex-col justify-center w-fit ml-auto py-8  '>
+    <div className='hidden md:flex flex-col w-fit  py-8  '>
     <div className='w-6 h-9 rounded-t-xl rounded-b-xl border-4 border-Brand2  ' >
       <hr className='h-3 w-1 bg-Brand2 rounded-lg  mt-1 mx-auto ' />
     </div> 

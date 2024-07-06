@@ -3,7 +3,7 @@ import Contact from "../component/Contact"
 import Homes from "../component/Home"
 import AboutMe from "./AboutMe"
 import Skill from "./Skill.tsx"
-
+import Works from "./Works.tsx"
 import styled from 'styled-components'
 
    const Container=styled.div`
@@ -24,6 +24,7 @@ export default function Home() {
     <Homes />
     <AboutMe />
     <Skill />
+    <Works />  
     <Contact />
   </Container> 
   )
