@@ -10,7 +10,11 @@ type Props={
 
 export default function Box({icon,title,text}:Props) {
   return (
-    <div className="flex w-80 h-32  rounded-xl border-0 my-2">
+    <div
+    data-aos="fade-up"
+    data-aos-delay="900"
+    data-aos-offset="0"
+    className="flex w-80 h-32  rounded-xl border-0 my-2">
        <div className="w-2 h-full bg-React border-0  rounded-l-xl p-0 m-0"></div>
        <div className=" w-full h-full bg-Brand1 border-0 rounded-r-xl p-0 m-0 flex flex-col justify-center gap-2  ">
             {icon }

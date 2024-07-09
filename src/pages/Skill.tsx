@@ -18,8 +18,8 @@ const Section=styled.div`
 
 export default function Skill() {
   return (
-   <Section>
-    <div className='hidden md:grid md:grid-cols-2   items-center'>
+   <Section  id='skills' >
+    <div    className='hidden md:grid md:grid-cols-2   items-center'>
       <div className='w-fit ml-auto'>
        <Arrow />
        </div>

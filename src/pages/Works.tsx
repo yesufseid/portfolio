@@ -21,7 +21,7 @@ const Section=styled.div`
   const {onClick } = props;
   return (
     <IoIosArrowForward   onClick={onClick}
-     className='w-14 h-14 cursor-pointer absolute top-36 -right-20 bg-Gray rounded-full ' />
+     className='w-14 h-14 cursor-pointer absolute top-36 -right-20 bg-Gray rounded-full hidden md:flex ' />
   );
 }
 
@@ -29,7 +29,7 @@ function SamplePrevArrow(props:any) {
   const {onClick } = props;
   return (
     <IoIosArrowBack onClick={onClick}  
-    className='w-14 h-14 cursor-pointer absolute top-36 -left-32  bg-Gray rounded-full ' />
+    className='w-14 h-14 cursor-pointer absolute top-36 -left-32  bg-Gray rounded-full hidden md:flex ' />
   );
 }
 
@@ -56,13 +56,13 @@ var settings = {
 };
   return(
     <Section>
-        <div className='flex justify-center '>
+        <div  id='works' className='flex justify-center '>
        <Arrow />
       </div>
       <Title text='Works' />  
       <p className='capitalize text-center text-black font-mono font-thin my-3'>
         i had the pleasure of working with this awesome projects</p>
-       <div className="md:w-[700px] md:mx-auto mt-10  relative ">
+       <div className="md:w-[700px] md:mx-auto mt-10  relative my-10 ">
       <Slider {...settings}>
         <Agency />
         <Moment />

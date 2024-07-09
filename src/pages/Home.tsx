@@ -5,6 +5,9 @@ import AboutMe from "./AboutMe"
 import Skill from "./Skill.tsx"
 import Works from "./Works.tsx"
 import styled from 'styled-components'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react"
 
    const Container=styled.div`
     height:100%;
@@ -19,6 +22,17 @@ import styled from 'styled-components'
     color: white;
    `
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      disable:window.innerWidth > 800,
+      offset: 100,
+      duration: 800,
+      easing: "ease-in",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
+
   return ( 
   <Container>
     <Homes />

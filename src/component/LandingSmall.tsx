@@ -1,4 +1,5 @@
 import Profile from "../component/ui/Profile"
+import { Typewriter } from 'react-simple-typewriter'
 
 
 export default function Landing() {
@@ -8,7 +9,18 @@ export default function Landing() {
            <Profile />
      </div>
         <div className="justify-center md:mt-10">
-           <h1 className=" font-semibold text-green-600 text-3xl md:text-5xl block mb-3 text-center ">MRNE Stack Developer</h1>
+           <h1 className=" font-semibold  text-green-600 text-3xl md:text-5xl block py-3 h-20 text-center ">
+            SEID YESUF <br /> 
+            <span className="ml-1 text-Brand1">
+            <Typewriter
+            words={['and Next.Js Developer.','MRNE Stack ']}
+            loop={0}
+            cursor
+            cursorStyle='|'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={2000}
+          /></span> </h1>
            <h1 className=" font-semibold text-green-600 md:text-yellow-200 text-3xl md:text-5xl text-center"></h1>
            <p className="font-sans mt-5 text-black md:text-white text-lg text-center">
             I like to craft solid and scalable full stack products 
@@ -25,7 +37,7 @@ export default function Landing() {
                </div>
                <div  className=" mt-3 text-black md:text-white  ">
                 <p>
-                    Over adecade of experiences 
+                    Over 2+ years of experiences 
                     building products for clients 
                     across several Counteries
                 </p>

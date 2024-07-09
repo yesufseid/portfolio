@@ -32,8 +32,8 @@ export default function Contact() {
      );
   }
   return (
-    <Section   className='mx-auto grid  grid-cols-1 md:grid-cols-2 items-center   '>
-         <div className='md:ml-56 mx-auto mb-2 flex-col justify-center  gap-5 items-center'>
+    <Section  id='contact'  className='mx-auto grid  grid-cols-1 md:grid-cols-2 items-center   '>
+         <div className='md:ml-56 mx-auto my-5 flex-col justify-center  gap-5 items-center'>
            <h1 className='text-2xl font-sans font-bold text-green-700 md:text-yellow-200 capitalize text-center'>contact us</h1>
            <form  ref={ref} onSubmit={HandleSubmit}className='w-fit' >
              <input type="text" name='name' placeholder='name' className='block h-10 my-5 border-2 rounded-md focus:border-green-400 w-80 ' />

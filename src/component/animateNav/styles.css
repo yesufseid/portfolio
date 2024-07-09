@@ -4,26 +4,34 @@
     top: 0;
     left: 0;
     bottom: 0;
-    width: 360px;
-    background: #fff;
+    width: 345px;
+    background:#fff;
   }
   
  #menu {
-    outline: none;
-    border: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    cursor: pointer;
     position: absolute;
     top:10px;
-    right: 15px;
+    right:15px;
+    width: 50px;
+    height: 50px;
+  } 
+  @media only screen and (max-width: 600px) {
+    #menu {
+      outline: none;
+      border: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      cursor: pointer;
+    position: absolute;
+    top:10px;
+    right:0px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background: transparent;
-  } 
-  
+  }
+   }
   /* ul,
   li {
     margin: 0;
@@ -71,7 +79,7 @@
     width: 20px;
     height: 20px;
     top: 10px;
-    right: 10px;
+    right:10px;
     display: flex;
     justify-content: center;
     align-items: center;

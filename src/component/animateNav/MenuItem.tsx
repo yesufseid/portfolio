@@ -27,8 +27,10 @@ const variants = {
 
 
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
-
-export const MenuItem = () => {
+type Props={
+  toggle:()=>any
+}
+export const MenuItem = ({ toggle}:Props) => {
   const style = { border: `2px solid ${colors[0]}` };
   return (
     <div className="button z-20">
@@ -41,22 +43,22 @@ export const MenuItem = () => {
       <div className="icon-placeholder flex justify-center items-center  hover:bg-pink-600 " style={style}>
        <RoofingIcon className="text-sky-700" />
       </div>
-      <div className="text-placeholder flex justify-center items-center text-2xl hover:bg-pink-600 text-blue-600 font-bold " style={style} >
+      <a href="/#home"  onClick={toggle} className="text-placeholder flex justify-center items-center text-2xl hover:bg-pink-600 text-blue-600 font-bold " style={style} >
        Home
-      </div>
+      </a>
     </motion.li>
     <motion.li
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-id="lists"
+        id="lists"
     >
       <div className="icon-placeholder flex justify-center items-center  hover:bg-pink-600  " style={style}>
        <PersonIcon   className="text-sky-700"/>
       </div>
-      <div className="text-placeholder flex justify-center items-center text-2xl hover:bg-pink-600 text-blue-600 font-bold " style={style} >
+      <a  href="/#about"  onClick={toggle}  className="text-placeholder flex justify-center items-center text-2xl hover:bg-pink-600 text-blue-600 font-bold " style={style} >
         About
-      </div>
+      </a>
     </motion.li>
     <motion.li
       variants={variants}
@@ -67,9 +69,9 @@ id="lists"
       <div className="icon-placeholder flex justify-center items-center  hover:bg-pink-600  z-20" style={style}>
        <TextSnippetIcon className="text-sky-700" />
       </div>
-      <div className="text-placeholder flex justify-center items-center  text-2xl hover:bg-pink-600 text-blue-600 font-bold  z-20 " style={style} >
-       Resume
-      </div>
+      <a  href="/#skills"     onClick={toggle} className="text-placeholder flex justify-center items-center  text-2xl hover:bg-pink-600 text-blue-600 font-bold  z-20 " style={style} >
+       Skills
+      </a>
     </motion.li>
     <motion.li
       variants={variants}
@@ -80,9 +82,9 @@ id="lists"
       <div className="icon-placeholder  flex justify-center items-center  hover:bg-pink-600  z-20" style={style}>
        <SettingsIcon className="text-sky-700" />
       </div>
-      <div className="text-placeholder flex justify-center items-center text-2xl hover:bg-pink-600 text-blue-600 font-bold  z-20 " style={style} >
-        Projects
-      </div>
+      <a  href="/#works"   onClick={toggle} className="text-placeholder flex justify-center items-center text-2xl hover:bg-pink-600 text-blue-600 font-bold  z-20 " style={style} >
+        Works
+      </a>
     </motion.li>
     <motion.li
       variants={variants}
@@ -93,9 +95,9 @@ id="lists"
       <div className="icon-placeholder  flex justify-center items-center  hover:bg-pink-600  z-20" style={style}>
        <LocalPhoneIcon className="text-sky-700"  />
       </div>
-      <div className="text-placeholder  flex justify-center items-center text-2xl hover:bg-pink-600 text-blue-600 font-bold   z-50" style={style} >
+      <a  href="/#contact"    onClick={toggle} className="text-placeholder  flex justify-center items-center text-2xl hover:bg-pink-600 text-blue-600 font-bold   z-50" style={style} >
        Contact
-      </div>
+      </a>
     </motion.li>
     </div>
   );
