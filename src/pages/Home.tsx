@@ -8,6 +8,7 @@ import styled from 'styled-components'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react"
+import ScrollButton from "../component/ScrollButton.tsx"
 
    const Container=styled.div`
     height:100%;
@@ -33,6 +34,9 @@ export default function Home() {
     AOS.refresh();
   }, []);
 
+
+
+
   return ( 
   <Container>
     <Homes />
@@ -40,6 +44,7 @@ export default function Home() {
     <Skill />
     <Works />  
     <Contact />
+    <ScrollButton />
   </Container> 
   )
 }
