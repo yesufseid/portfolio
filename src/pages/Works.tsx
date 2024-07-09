@@ -4,6 +4,8 @@ import Arrow from '../component/Arrow';
 import Slider from "react-slick";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import Prise,{Agency,Moment,Elearning} from '../component/Sliders';
+
 
 
 
@@ -15,28 +17,43 @@ const Section=styled.div`
 }
 /* background-image:url("/bg.jpg") */
 `
+ function SampleNextArrow(props:any) {
+  const {onClick } = props;
+  return (
+    <IoIosArrowForward   onClick={onClick}
+     className='w-14 h-14 cursor-pointer absolute top-36 -right-20 bg-Gray rounded-full ' />
+  );
+}
+
+function SamplePrevArrow(props:any) {
+  const {onClick } = props;
+  return (
+    <IoIosArrowBack onClick={onClick}  
+    className='w-14 h-14 cursor-pointer absolute top-36 -left-32  bg-Gray rounded-full ' />
+  );
+}
 
 export default function Works(){
-  var settings = {
-    dots:false,
-    infinite:true,
-    speed: 500,
-    slidesToShow:1,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    Arrow:true,
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 0
-        }
+var settings = {
+  dots:false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  swipeToSlide: true,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
+  responsive: [
+    {
+      breakpoint:600,
+      settings: {
+        slidesToShow:1,
+        slidesToScroll:1,
+        infinite: true,
+        dots:false,
+        swipeToSlide: true,
       }
-    ]
-  };
-
+}]
+};
   return(
     <Section>
         <div className='flex justify-center '>
@@ -45,17 +62,14 @@ export default function Works(){
       <Title text='Works' />  
       <p className='capitalize text-center text-black font-mono font-thin my-3'>
         i had the pleasure of working with this awesome projects</p>
-        <div className='md:w-[700px] md:mx-auto mt-10  relative '>
-        <IoIosArrowForward className='w-14 h-14 text-Brand2 absolute top-36 -right-10 ' />
-        <Slider {...settings}>
-          {[1,2,3].map((p)=>{
-            return(
-              <h1 className='h-80 '>{p}</h1>
-            )
-          })}
+       <div className="md:w-[700px] md:mx-auto mt-10  relative ">
+      <Slider {...settings}>
+        <Agency />
+        <Moment />
+        <Prise />
+        <Elearning />
       </Slider>
-      <IoIosArrowBack  className='w-14 h-14 absolute top-36 -left-10  rounded-full ' />
-      </div>
+    </div>
     </Section>
   )
 }
