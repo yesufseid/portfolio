@@ -31,7 +31,7 @@ export default function Skill() {
      <Box icon={<MdOutlineDesktopWindows className='mx-auto text-black w-10 h-10 ' />} title='Frontend Development' text='HTML.CSS.JS.REACT' />
      <Box icon={<LuSmartphone  className='mx-auto text-black w-10 h-10'/>}  text='Node.Express.Mongodb.Prisma' title="Backend Development"/>
      </div>
-     <div className='flex justify-center my-20 md:mt-20 overflow-x-auto md:mb-5'>
+     <div className='flex justify-center my-20 md:mt-20 md:mb-5 overflow-x-hidden'>
      <SimpleSlider />
      </div>
    </Section>
