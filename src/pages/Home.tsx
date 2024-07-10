@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react"
 import ScrollButton from "../component/ScrollButton.tsx"
+import BasicSpeedDial from "../component/ui/Dial.tsx"
 
    const Container=styled.div`
     height:100%;
@@ -44,7 +45,10 @@ export default function Home() {
     <Skill />
     <Works />  
     <Contact />
-    <ScrollButton />
+    <div className="hidden md:flex">
+    <BasicSpeedDial />
+    </div>
+    <ScrollButton /> 
   </Container> 
   )
 }

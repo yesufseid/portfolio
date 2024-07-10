@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import emailjs from '@emailjs/browser';
 import {useRef,useState} from 'react';
+import Footer from './Footer';
 import Map from "./ui/Map"
    const Section=styled.div`
      @media only screen and (min-width: 600px) {
@@ -45,6 +46,7 @@ export default function Contact() {
              </form>
          </div>
          <Map/>
+         <Footer />
     </Section>
   )
 }
