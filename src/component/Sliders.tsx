@@ -13,7 +13,7 @@ export default function Prise() {
   return (
     <div  className="flex justify-center gap-0 items-center ">
        <img src={p1} alt="img"   className="h-80"   />
-       <div className="flex flex-col  mx-0 px-0">
+       <div className="flex flex-col gap-1 mx-0 px-0">
         <a   href={"https://price-wise-tau.vercel.app/"}  target="_blank" className={`text-Brand1 text-center
             underline  capitalize`}>veiw website</a>
         <img src={p2} alt="img" className="h-64  " />
@@ -23,10 +23,10 @@ export default function Prise() {
 }
 export  function Agency() {
   return (
-    <div  className="flex justify-center gap-0 items-center ">
-       <img src={a1} alt="img"   className="h-80"   />
-       <div className="flex flex-col  mx-0 px-0">
-        <a   href={"https://agency-two-psi.vercel.app/"}  target="_blank" className={`text-Brand1 text-center
+    <div  className="flex gap-0  items-center  ">
+       <img src={a1} alt="img"   className="h-80 m-0 p-0"   />
+       <div className="flex flex-col gap-1  mx-0 px-0">
+        <a   href={"https://agency-two-psi.vercel.app/"}  target="_blank" className={`text-Brand1 w-fit mx-auto text-center
             underline  capitalize`}>veiw website</a>
         <img src={a2} alt="img" className="h-64  " />
        </div>
@@ -37,7 +37,7 @@ export  function Moment() {
   return (
     <div  className="flex justify-center gap-0 items-center  transition duration-1500 ease-linear">
        <img src={m1} alt="img"   className="h-80"   />
-       <div className="flex flex-col  mx-0 px-0">
+       <div className="flex flex-col  gap-1 mx-0 px-0">
         <a   href={"https://moment-q6od.onrender.com"}  target="_blank" className={`text-Brand1 text-center
             underline  capitalize`}>veiw website</a>
         <img src={m2} alt="img" className="h-64  " />
@@ -49,7 +49,7 @@ export  function Elearning() {
   return (
     <div  className="flex justify-center gap-0 items-center ">
        <img src={e1} alt="img"   className="h-80"   />
-       <div className="flex flex-col  mx-0 px-0">
+       <div className="flex flex-col gap-1  mx-0 px-0">
         <a   href={"https://learn.bluemarkcollege.com/"}  target="_blank" className={`text-Brand1 text-center
             underline  capitalize`}>veiw website</a>
         <img src={e2} alt="img" className="h-64  " />
