@@ -30,15 +30,15 @@ export const Example = () => {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
-  const scrollToTop = () =>{ 
-    if(isOpen===true){
-        window.scrollTo({ 
-        top: 0, 
-        behavior: 'smooth'
-        });  
-    }
-  }
-window.addEventListener('scroll',scrollToTop); 
+//   const scrollToTop = () =>{ 
+//     if(isOpen===true){
+//         window.scrollTo({ 
+//         top: 0, 
+//         behavior: 'smooth'
+//         });  
+//     }
+//   }
+// window.addEventListener('scroll',scrollToTop); 
 
   return (
     <motion.nav
