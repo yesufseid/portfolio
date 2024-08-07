@@ -23,13 +23,13 @@ export default function AboutMe() {
           <div className='flex flex-col gap-3 justify-start px-5'>
               <h1 
               data-aos="fade-up"
-            data-aos-delay="900"
+            data-aos-delay="300"
             data-aos-offset="0"
               className='text-3xl font-serif font-semibold bg-bg1 border-2 border-Brand1 p-2 
               rounded-ss-3xl rounded-ee-3xl w-fit '>About Me</h1>
                <div
               data-aos="zoom-in-up"
-            data-aos-delay="900"
+            data-aos-delay="300"
             data-aos-offset="0"
                className='flex flex-col justify-start  gap-2 bg-bg1 rounded-xl px-3  md:w-[590px] capitalize font-light'>
                 <code className='text-Brand1'>{code[0]}</code>
@@ -52,7 +52,7 @@ export default function AboutMe() {
           </div >
            <img 
                data-aos="fade-up"
-            data-aos-delay="900"
+            data-aos-delay="300"
             data-aos-offset="0"
            src={"/about.jpg"} className='w-72 h-96 mx-auto md:mx-0 my-2 rounded-xl' alt="about me" />
          </div>

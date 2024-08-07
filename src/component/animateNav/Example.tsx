@@ -1,5 +1,5 @@
 
-import { useRef } from "react";
+import { useRef,useState } from "react";
 import { motion,useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
@@ -27,18 +27,14 @@ const sidebar = {
 
 export const Example = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
+  const [hidden,setHidden]=useState(false)
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
-//   const scrollToTop = () =>{ 
-//     if(isOpen===true){
-//         window.scrollTo({ 
-//         top: 0, 
-//         behavior: 'smooth'
-//         });  
-//     }
-//   }
-// window.addEventListener('scroll',scrollToTop); 
+const Handler=()=>{
+  toggleOpen()
+  setTimeout(()=>setHidden(true),3000)
+}
 
   return (
     <motion.nav
@@ -47,8 +43,10 @@ export const Example = () => {
       custom={height}
       ref={containerRef}
     >
+      <div  hidden={isOpen?false:hidden} className="w-screen  fixed top-0 left-0 z-20 h-screen bg-transparent" onClick={()=>isOpen&&Handler()}  >
       <motion.div  className="background  border-r-2 rounded-r-3xl z-10   " variants={sidebar} />
-      <Navigation  toggle={()=>toggleOpen()} />
+       <Navigation  toggle={()=>toggleOpen()} />
+       </div>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

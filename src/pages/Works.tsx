@@ -4,7 +4,7 @@ import Arrow from '../component/Arrow';
 import Slider from "react-slick";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-import Prise,{Agency,Moment,Elearning} from '../component/Sliders';
+import Prise,{Agency,Moment,Elearning,Luxuryhotel} from '../component/Sliders';
 
 
 
@@ -49,7 +49,7 @@ var settings = {
         slidesToShow:1,
         slidesToScroll:1,
         infinite: true,
-        dots:false,
+        dots:true,
         swipeToSlide: true,
       }
 }]
@@ -68,6 +68,7 @@ var settings = {
         <Moment />
         <Prise />
         <Elearning />
+        <Luxuryhotel />
       </Slider>
     </div>
     </Section>

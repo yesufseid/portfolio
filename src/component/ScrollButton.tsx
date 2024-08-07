@@ -29,7 +29,7 @@ window.addEventListener('scroll', toggleVisible);
 
 return ( 
 	<Button> 
-	<IoIosArrowUp onClick={scrollToTop}
+	<IoIosArrowUp onClick={scrollToTop} className='bg-black rounded-full text-white'
 	style={{display: visible ? 'inline' : 'none'}} /> 
 	</Button> 
 ); 

@@ -6,6 +6,8 @@ import m1 from "/5.png"
 import m2 from "/6.png"
 import e1 from "/7.png"
 import e2 from "/8.png"
+import h1 from "/9.png"
+import h2 from "/10.png"
 
 
 
@@ -35,7 +37,7 @@ export  function Agency() {
 }
 export  function Moment() {
   return (
-    <div  className="flex justify-center gap-0 items-center  transition duration-1500 ease-linear">
+    <div  className="flex justify-center gap-0 items-center transition duration-1500 ease-linear   ">
        <img src={m1} alt="img"   className="h-80"   />
        <div className="flex flex-col  gap-1 mx-0 px-0">
         <a   href={"https://moment-q6od.onrender.com"}  target="_blank" className={`text-Brand1 text-center
@@ -53,6 +55,19 @@ export  function Elearning() {
         <a   href={"https://learn.bluemarkcollege.com/"}  target="_blank" className={`text-Brand1 text-center
             underline  capitalize`}>veiw website</a>
         <img src={e2} alt="img" className="h-64  " />
+       </div>
+    </div>
+  )
+}
+
+export  function Luxuryhotel() {
+  return (
+    <div  className="flex justify-center gap-0 items-center ">
+       <img src={h1} alt="img"   className="h-80"   />
+       <div className="flex flex-col gap-1  mx-0 px-0">
+        <a   href={"https://luxury-hotel-rho.vercel.app/"}  target="_blank" className={`text-Brand1 text-center
+            underline  capitalize`}>veiw website</a>
+        <img src={h2} alt="img" className="h-64  " />
        </div>
     </div>
   )
