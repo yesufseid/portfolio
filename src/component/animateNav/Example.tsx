@@ -37,13 +37,13 @@ export const Example = () => {
       custom={height}
       ref={containerRef}
     >
-      <div  className="absolute top-0 left-0  h-screen w-screen flex z-20 bg-transparent"  onClick={()=>isOpen&&toggleOpen() } >
-        <div  className="fixed top-0 left-0  h-screen w-fit flex z-20 bg-transparent" >
+      {/* <div  className="absolute top-0 left-0  h-screen w-screen flex z-20 bg-transparent"  onClick={()=>isOpen&&toggleOpen() } >
+        <div  className="fixed top-0 left-0  h-screen w-fit flex z-20 bg-transparent" > */}
        <motion.div  className="background  border-r-2 rounded-r-3xl z-10   " variants={sidebar} />
        <Navigation  toggle={()=>toggleOpen()} />
-       </div>
-       </div>
-      <MenuToggle toggle={() =>toggleOpen()} />
+       {/* </div> */}
+       {/* </div> */}
+      <MenuToggle  toggle={() =>toggleOpen()} />
     </motion.nav>
   );
 };
