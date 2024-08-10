@@ -15,7 +15,7 @@ type Props={
 }
 export const Navigation = ({ toggle}:Props) => (
   <motion.ul variants={variants} className="z-10"  id="list"    >
-       <MenuItem  toggle={toggle} />
+       <MenuItem  toggle={toggle()} />
   </motion.ul>
 );
 
