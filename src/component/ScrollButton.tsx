@@ -13,10 +13,10 @@ useEffect(()=>{
 
 const toggleVisible = () => { 
 	const scrolled = document.documentElement.scrollTop;
-	if (scrolled <= 300  || scrolled > 3000 ){ 
+	if (scrolled > 300){ 
+		scrolled > 2500?setVisible(false):setVisible(true) 
+	} else if (scrolled <= 300){ 
 	setVisible(false) 
-	} else if (scrolled > 300){ 
-	setVisible(true) 
 	}
 }; 
 
