@@ -11,12 +11,14 @@ const variants = {
   }
 };
 type Props={
-  toggle:()=>any
+ toggle:React.Dispatch<React.SetStateAction<boolean>>
 }
-export const Navigation = ({ toggle}:Props) => (
-  <motion.ul variants={variants} className="z-10"  id="list"    >
-       <MenuItem  toggle={toggle()} />
-  </motion.ul>
-);
+export const Navigation = ({ toggle}:Props) => {
+  return (
+    <motion.ul variants={variants} className="z-10"  id="list"    >
+    <MenuItem  toggle={()=>toggle(false)} />
+   </motion.ul>
+  )
+};
 
 

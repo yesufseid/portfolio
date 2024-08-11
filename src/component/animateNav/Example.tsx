@@ -1,6 +1,6 @@
 
-import { useRef} from "react";
-import { motion,useCycle } from "framer-motion";
+import { useRef,useState} from "react";
+import { motion} from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
@@ -26,24 +26,24 @@ const sidebar = {
 };
 
 export const Example = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [isOpen, toggleOpen] = useState(false);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
   return (
     <motion.nav
       initial={false}
-      animate={isOpen ? "open" : "closed"}
+      animate={isOpen?"open":"closed"}
       custom={height}
       ref={containerRef}
     >
-      {/* <div  className="absolute top-0 left-0  h-screen w-screen flex z-20 bg-transparent"  onClick={()=>isOpen&&toggleOpen() } >
-        <div  className="fixed top-0 left-0  h-screen w-fit flex z-20 bg-transparent" > */}
+      <div  className="absolute top-0 left-0  h-screen w-screen flex z-20 bg-transparent"  onClick={()=>isOpen&&toggleOpen(false) } >
+        <div  className="fixed top-0 left-0  h-screen w-fit flex z-20 bg-transparent" >
        <motion.div  className="background  border-r-2 rounded-r-3xl z-10   " variants={sidebar} />
-       <Navigation  toggle={()=>toggleOpen()} />
-       {/* </div> */}
-       {/* </div> */}
-      <MenuToggle  toggle={() =>toggleOpen()} />
+       <Navigation  toggle={toggleOpen} />
+       </div> 
+       </div>
+      <MenuToggle toggle={toggleOpen} />
     </motion.nav>
   );
 };
