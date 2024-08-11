@@ -12,8 +12,8 @@ import {
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
           rotate: [-10.0, -52.0, 0],
-          center: [-5, -3],
-          scale: 1100
+          center: [20, -15],
+          scale: 310
         }}
         style={{width:"100%", height:"100%"}}
       >
@@ -30,7 +30,7 @@ import {
           }
         </Geographies>
         <Annotation
-          subject={[2.3522, 48.8566]}
+          subject={[38.0192,8.7525]}
           dx={-90}
           dy={-30}
           connectorProps={{
