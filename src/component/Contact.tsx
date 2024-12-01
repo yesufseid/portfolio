@@ -10,24 +10,24 @@ import Map from "./ui/Map"
     }
 
    `
-
+emailjs.init("KMv4tUGYXWwidttI0"); // Initialize with your public key
 export default function Contact() {
   const ref=useRef<any>("");
   const [succes,setSucces]=useState<null |true |false>(null)
 
-  const HandleSubmit=(e:any)=>{
+  const HandleSubmit=(e: React.FormEvent<HTMLFormElement>)=>{
      e.preventDefault()
+     console.log(e.target);
+     
      emailjs
-     .sendForm('service_ekfxobw', 'template_qxrxa9x',e.target.value, {
-       publicKey: 'CHwp1BAuOFSw0iVTT',
-     })
+     .sendForm('service_o33fkxb', 'template_qxrxa9x', e.target as HTMLFormElement)
      .then(
        () => {
          console.log('SUCCESS!');
          setSucces(true)
        },
        (error) => {
-         console.log('FAILED...', error.text);
+         console.log('FAILED...', error);
          setSucces(false)
        },
      );
@@ -36,13 +36,14 @@ export default function Contact() {
     <Section  id='contact'  className='mx-auto grid  grid-cols-1 md:grid-cols-2 items-center   '>
          <div className='md:ml-56 mx-auto my-5 flex-col justify-center  gap-5 items-center'>
            <h1 className='text-2xl font-sans font-bold text-green-700 md:text-yellow-200 capitalize text-center'>contact us</h1>
-           <form  ref={ref} onSubmit={HandleSubmit}className='w-fit' >
-             <input type="text" name='name' placeholder='name' className='block h-10 my-5 border-2 rounded-md focus:border-green-400 w-80 ' />
-             <input type="email" name='email' placeholder='email' className='block h-10 my-5 border-2 rounded-md focus:border-green-400 w-80 ' />
+           <form  ref={ref}  onSubmit={HandleSubmit}className='w-fit' >
+             <input type="text" name='name'  placeholder='name' className='block h-10 my-5 text-black border-2 rounded-md focus:border-green-400 w-80 ' />
+             <input type="email" name='email' placeholder='email' className='block text-black h-10 my-5 border-2 rounded-md focus:border-green-400 w-80 ' />
              <textarea name="message" id="message"  placeholder="write your message" rows={5} className='block 
              my-5 border-2 rounded-md focus:border-green-400 w-80 text-black '  />
              <button type='submit' className='w-80 py-3 rounded-md bg-pink-500 '>send</button>
-             {succes&&(<p>your massage has been sent. we will get back to you soon :)</p>)}
+             {succes&&(<p>your massage has been sent. we will get back to you soon :)</p>)
+             }
              </form>
          </div>
          <Map/>

@@ -18,7 +18,7 @@ const Copy=()=>{
 
 const actions = [
   { icon: <MdOutlineContentCopy  onClick={()=>Copy()}  className='w-6 h-6' />, name: 'Copy' },
-  { icon: <a href='/SEID YESUF(cv).pdf'download={true} > <MdSaveAlt  className='w-6 h-6'  /></a>, name: 'Cv' },
+  { icon: <a href='/SEID YESUF-CV.pdf'download={true} > <MdSaveAlt  className='w-6 h-6'  /></a>, name: 'Cv' },
   { icon: <a href='tel:+251960417946' ><FaPhoneFlip  className='w-6 h-6' /></a>, name: 'Call' },
   { icon: <IoShareSocial  className='w-6 h-6' />, name: 'Share' },
 ];

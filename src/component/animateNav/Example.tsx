@@ -37,7 +37,7 @@ export const Example = () => {
       custom={height}
       ref={containerRef}
     >
-      <div  className={` ${isOpen?"fixed":"absolute"} top-0 left-0  h-screen w-screen flex z-20 bg-transparent`}  onClick={()=>isOpen&&toggleOpen(false) } >
+      <div  className={` ${isOpen?"fixed":"absolute"} top-0 left-0  h-screen w-screen flex z-20 bg-inherit`}  onClick={()=>isOpen&&toggleOpen(false) } >
         <div  className={`${isOpen?"fixed":"absolute"} top-0 left-0  h-screen w-fit flex z-20 bg-transparent`}>
        <motion.div  className="background  border-r-2 rounded-r-3xl z-10   " variants={sidebar} />
        <Navigation  toggle={toggleOpen} />

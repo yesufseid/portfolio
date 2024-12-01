@@ -33,7 +33,7 @@ export default function Landing() {
                     enhancement,design system & 
                     UI Engineering
                    </p>
-                   <hr className="w-1 h-24 bg-green-600" />
+                   <hr className="w-1 h-28 bg-green-600" />
                </div>
                <div  className=" mt-3 text-black md:text-white  ">
                 <p>
