@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter'
 export default function Landing() {
   return (
     <div className="grid grid-cols-1 md:py-5 my-10  title ">
-    <div className="flex flex-col justify-center ml-5 items-center -z-0 ">
+    <div className="flex flex-col justify-center  items-center -z-0 ">
            <Profile />
      </div>
         <div className="justify-center md:mt-10">

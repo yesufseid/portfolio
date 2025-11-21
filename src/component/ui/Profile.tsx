@@ -1,9 +1,13 @@
-import image from "../../assets/s.png" 
 
-export default function Profile() {
+import image2 from "../../assets/seya12 (1).png";
+
+export default function Profile() {;
+
   return (
-        // <div className="w-[300px] h-[300px]  border-4 border-black  ">
-          <img src={image} alt="img"  className="w-[300px] h-[300px] relative md:rounded-md rounded-full bottom-8 right-5 md:right-9  -z-0 shadow-2xl shadow-black "   />
-        // </div>  
-  )
+      <img
+        src={image2}
+        className={` w-[350px] md:w-[300px] h-[350px] rounded-full  md:rounded-none bg-transparent  shadow-2xl shadow-black  `}
+        alt="img1"
+      />
+  );
 }
